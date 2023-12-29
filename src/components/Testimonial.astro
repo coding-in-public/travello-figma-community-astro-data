@@ -1,0 +1,14 @@
+---
+import { Image } from "astro:assets";
+import { getCollection } from "astro:content";
+const testimonies = await getCollection("testimonials");
+---
+
+{
+  testimonies.map(({ data }) => (
+    <div>
+      <p>{data.name}</p>
+      <Image src={data.headshot} alt={data.name} />
+    </div>
+  ))
+}

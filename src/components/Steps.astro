@@ -1,0 +1,21 @@
+---
+const res = await fetch("http://localhost:3000/tripSteps");
+const steps: StepsItem[] = await res.json();
+
+interface StepsItem {
+  id: number;
+  title: string;
+  desc: string;
+}
+---
+
+<div>
+  {
+    steps.map((s) => (
+      <div>
+        <p>{s.title}</p>
+        <p>{s.desc}</p>
+      </div>
+    ))
+  }
+</div>

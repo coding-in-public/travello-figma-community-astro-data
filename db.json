@@ -1,0 +1,45 @@
+{
+  "contacts": [
+    {
+      "email": "email@email.com",
+      "id": 1
+    },
+    {
+      "email": "email@mdiom.com",
+      "id": 2
+    },
+    {
+      "email": "email@momi.com",
+      "id": 3
+    },
+    {
+      "email": "email@email.com",
+      "id": 4
+    },
+    {
+      "email": "email@meila.com",
+      "id": 5
+    },
+    {
+      "email": "email@email.com",
+      "id": 6
+    }
+  ],
+  "tripSteps": [
+    {
+      "id": 1,
+      "title": "Choose Destination",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing 6C0199D9CE371883BD04055B265D6E."
+    },
+    {
+      "id": 2,
+      "title": "Make Payment",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus."
+    },
+    {
+      "id": 3,
+      "title": "Reach Airport on Selected Date",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna, tortor tempus."
+    }
+  ]
+}

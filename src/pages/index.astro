@@ -1,0 +1,14 @@
+---
+import Steps from "../components/Steps.astro";
+import Testimonial from "../components/Testimonial.astro";
+import ContactForm from "../components/ContactForm";
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout>
+  <div class="grid gap-12 container">
+    <Steps />
+    <Testimonial />
+    <ContactForm client:visible />
+  </div>
+</BaseLayout>

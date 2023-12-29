@@ -1,0 +1,36 @@
+---
+import { Icon } from "astro-icon/components";
+
+import navItems from "../data/navItems";
+import Link from "./Link.astro";
+---
+
+<nav>
+  <div class="container">
+    <div class="flex justify-between items-center py-4">
+      <a
+        href="/"
+        aria-label="Go home"
+        class="focus:outline-white focus-visible:ring-4 ring-offset-2 rounded"
+      >
+        <Icon name="logomark" />
+      </a>
+      <ul class="flex gap-2">
+        {
+          navItems.map((a) => (
+            <li>
+              <Link
+                href={a.href}
+                intent={a.style as "primary" | "ghost"}
+                size={"small"}
+              >
+                {a.text}
+                {a.dropdrop && <Icon name="caret" />}
+              </Link>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </div>
+</nav>
